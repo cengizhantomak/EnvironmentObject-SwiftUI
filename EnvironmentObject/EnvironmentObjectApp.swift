@@ -11,7 +11,10 @@ import SwiftUI
 struct EnvironmentObjectApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NavigationView {
+                ScreenA()
+            }
+            .environmentObject(SharedData())
         }
     }
 }
